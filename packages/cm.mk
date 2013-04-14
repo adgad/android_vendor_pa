@@ -3,6 +3,8 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     CMFileManager \
+    LockClock \
+    Apollo \
     Torch \
     openvpn \
     e2fsck \
