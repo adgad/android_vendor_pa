@@ -4,10 +4,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.config.notification_sound=Proxima.ogg \
   ro.config.alarm_alert=Cesium.ogg
 
-# Copy specific ROM files
-PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk 
-
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/bin/sysinit:system/bin/sysinit \
@@ -90,7 +86,7 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/backup.conf
 
 PA_VERSION_MAJOR = 3
-PA_VERSION_MINOR = 1
+PA_VERSION_MINOR = 2
 PA_VERSION_MAINTENANCE = 5
 PA_PREF_REVISION = 1
 
@@ -109,10 +105,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.pa.version=$(VERSION) \
   ro.papref.revision=$(PA_PREF_REVISION)
 
-# goo.im properties
-ifneq ($(DEVELOPER_VERSION),true)
-    PRODUCT_PROPERTY_OVERRIDES += \
-      ro.goo.developerid=paranoidandroid \
-      ro.goo.rom=paranoidandroid \
-      ro.goo.version=$(shell date +%s)
-endif
