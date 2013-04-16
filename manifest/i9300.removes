@@ -24,10 +24,6 @@
         "path":     "frameworks/opt/telephony"
     },
     {
-	"name":	    "ParanoidAndroid/android_device_samsung_i9300",
-	"path":     "device/samsung/i9300"
-    },
-    {
         "name":     "ParanoidAndroid/android_vendor_pa",
         "path":     "vendor/pa"
     },
@@ -39,5 +35,8 @@
         "name":     "ParanoidAndroid/android_packages_apps_Settings",
         "path":     "packages/apps/Settings"
     }
-
+    {
+        "name":     "ParanoidAndroid/android_device_samsung_i9300",
+        "path":     "device/samsung/i9300"
+    }
 ]
